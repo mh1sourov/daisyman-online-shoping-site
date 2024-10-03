@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,184 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
+
 </head>
 <body>
-    <h1>hello world</h1>
+    <header>
+<!-- nav section start here -->
+
+<div class="navbar bg-base-100">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl">Daisy Man</a>
+    </div>
+    <div class="flex-none">
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <div class="indicator">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            <span class="badge badge-sm indicator-item">8</span>
+          </div>
+        </div>
+        <div
+          tabindex="0"
+          class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+          <div class="card-body">
+            <span class="text-lg font-bold">8 Items</span>
+            <span class="text-info">Subtotal: $999</span>
+            <div class="card-actions">
+              <button class="btn btn-primary btn-block">View cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img
+              alt="Tailwind CSS Navbar component"
+              src="./images/avatar.png" />
+          </div>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li>
+            <a class="justify-between">
+              Profile
+              <span class="badge">New</span>
+            </a>
+          </li>
+          <li><a>Settings</a></li>
+          <li><a>Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+<!-- nav section ends here -->
+
+<!-- hero section start here -->
+
+<div
+  class="hero min-h-[calc(100vh-66px)]" 
+  style="background-image: url(./images/yellow-bg.jpg);">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-content text-neutral-content text-center">
+    <div class="max-w-md">
+      <h1 class="mb-5 text-5xl font-bold">Welcome To DaisyMan</h1>
+      <p class="mb-5">
+        Your one-stop destination for all your fashion needs. At DaisyMan, we believe that style is a reflection of your unique personality and our mission is to provide you with a diverse and trendy collection.
+      </p>
+      <button class="btn">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- hero section ends here -->
+
+</header>
+
+<!-- catagories section start here-->
+
+
+<section class=" max-w-screen-xl mx-auto my-10 py-5 px-8 md:px-16 lg:px-24">
+
+    <div class="text-center pb-5">
+        <h1 class="text-2xl md:text-4xl">Huge Collection</h1>
+        <p class="text-sm">Brows from a Various Collection</p>
+    </div>
+
+<!-- card sections -->
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="card bg-base-100 image-full shadow-xl">
+        <figure>
+          <img
+            src="./images/shoes.avif"
+            alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>At DaisyMan, we believe that style is a reflection of your unique personality and our mission is to provide you with a diverse and trendy collection.</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="card bg-base-100 image-full shadow-xl">
+        <figure>
+          <img
+            src="./images/hoodies.avif"
+            alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>At DaisyMan, we believe that style is a reflection of your unique personality and our mission is to provide you with a diverse and trendy collection.</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="card bg-base-100 image-full shadow-xl">
+        <figure>
+          <img
+            src="./images/perfume.avif"
+            alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>At DaisyMan, we believe that style is a reflection of your unique personality and our mission is to provide you with a diverse and trendy collection.</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+</div>
+
+</section>
+<!-- catagories section ends here -->
+
+<!-- Easy Purchase section start here -->
+
+<section class="max-w-screen-xl mx-auto my-10 py-5 px-8 md:px-16 lg:px-24">
+
+<div class="flex flex-col md:flex-row lg:flex-row">
+
+<div class="flex-1">
+    <h1 class="text-xl lg:text-3xl md:text-2xl">
+        Easy Purchase
+    </h1>
+    <p class="text-sm">
+        we believe that style is a reflection of your unique personality and our mission is to provide you with a diverse and trendy collection.
+
+Our mission is to provide you with a diverse and trendy collection.
+    </p>
+</div>
+
+<div class="flex-1">
+    <img src="./images/easy-purchase.avif" alt="">
+</div>
+</div>
+
+</section>
+
+<!-- Easy Purchase section ends here -->
+
 </body>
 </html>
